@@ -12,5 +12,14 @@ class HelloServlet(
     override fun service(req: HttpServletRequest?, resp: HttpServletResponse?) {
 //        super.service(req, resp)
         println("HelloServlet.service")
+        println("req = ${req}")
+        println("resp = ${resp}")
+
+        val username = req?.getParameter("username")
+        println("username = ${username}")
+
+        resp?.contentType = "text/plain"
+        resp?.characterEncoding = "utf-8"
+        resp?.writer?.write("hello ${username}")
     }
 }
