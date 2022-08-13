@@ -21,6 +21,12 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+    //JSP 추가 시작
+    implementation("org.apache.tomcat.embed:tomcat-embed-jasper")
+    implementation("javax.servlet:jstl")
+    //JSP 추가 끝
+
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
