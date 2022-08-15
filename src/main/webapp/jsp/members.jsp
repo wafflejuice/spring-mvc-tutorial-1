@@ -3,7 +3,6 @@
 <%@ page import="hello.survlet.domain.member.Member" %>
 <%@ page import="java.util.List" %>
 <%
-
   MemberRepository memberRepository = MemberRepository.INSTANCE;
   List<Member> members = memberRepository.findAll();
 %>
