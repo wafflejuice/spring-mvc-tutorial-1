@@ -4,6 +4,4 @@ class ModelView(
     var viewName: String
 ) {
     var model: MutableMap<String, Any> = mutableMapOf()
-
-
 }

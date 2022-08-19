@@ -15,8 +15,9 @@ class MemberSaveControllerV3 : ControllerV3 {
         val member = Member(username = username!!, age = age!!)
         memberRepository.save(member)
 
-        val mv = ModelView("save-result")
-        mv.model["member"] = member as Any
-        return mv
+        val modelView = ModelView("save-result")
+        modelView.model["member"] = member as Any
+
+        return modelView
     }
 }

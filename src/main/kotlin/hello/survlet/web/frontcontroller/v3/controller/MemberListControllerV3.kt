@@ -10,7 +10,7 @@ class MemberListControllerV3 : ControllerV3 {
     override fun process(paramMap: Map<String, String>): ModelView {
         val members = memberRepository.findAll()
         val mv = ModelView("members")
-        mv.model.put("members", members)
+        mv.model["members"] = members
 
         return mv
     }
