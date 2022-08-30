@@ -12,6 +12,6 @@ class OldController : Controller {
     override fun handleRequest(request: HttpServletRequest, response: HttpServletResponse): ModelAndView? {
         println("OldController.handleRequest")
 
-        return null
+        return ModelAndView("new-form")
     }
 }
