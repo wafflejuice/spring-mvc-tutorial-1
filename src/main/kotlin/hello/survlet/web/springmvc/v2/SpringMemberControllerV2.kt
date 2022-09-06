@@ -14,7 +14,6 @@ class SpringMemberControllerV2 {
 
     private val memberRepository = MemberRepository
 
-
     @RequestMapping("/new-form")
     fun newForm(): ModelAndView {
         return ModelAndView("new-form")
